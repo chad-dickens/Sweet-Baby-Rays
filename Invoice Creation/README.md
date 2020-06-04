@@ -7,7 +7,7 @@ This project is based on the same premise as my [VBA invoice creation process](h
 
 For this process I moved my data out of MS Access and into a MySQL Server. The creation of the three tables I needed is in db_setup.sql.
 
-```
+```sql
 CREATE TABLE address_data (
 ID int NOT NULL AUTO_INCREMENT, 
 Country_Code CHAR(2),
@@ -19,7 +19,7 @@ PRIMARY KEY(ID));
 
 However, the actual process of getting the data out of Access and into MySQL was giving me some grief, so I just exported the data into CSV files and used brute force with python to get it in, as per populating_sales_data.py.
 
-```
+```python
 import mysql.connector
 import csv
 
@@ -67,8 +67,8 @@ An example of my PyFPDF detail invoice:
 
 ### Error Logging
 
-Given that this was going to be an automated process with no human intervention, I placed priority on carfully documenting what happened. This was in part facilitated by the send_email_365() function in the email_module.py file which makes use of broad exception clauses to catch errors and return them, such as:
-```
+Given that this was going to be an automated process with no human intervention, I placed priority on carefully documenting what happened. This was in part facilitated by the send_email_365() function in the email_module.py file which makes use of broad exception clauses to catch errors and return them, such as:
+```python
 except Exception as err:
         return (False, '{}\nUnable to send email to {}.\n'
                 'Error Description: {}.\n'.format(time_stamp, email_recipient, err))
@@ -115,4 +115,4 @@ Furthermore, if errors have occurred, an email will be sent to the process manag
 An example of my email to customers is below:
 ![alt text](CustomerEmail.PNG)
 
-You'll notice that in both the email to customers and the error log email to the process manager, I utilisied by number_name() function from the assorted_functions.py file. While perhaps a little unnecessary, I thought this was a good practical use of that function.
+You'll notice that in both the email to customers and the error log email to the process manager, I utilisied my number_name() function from the assorted_functions.py file. While perhaps a little unnecessary, I thought this was a good practical use of that function.
