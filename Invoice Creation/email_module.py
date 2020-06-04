@@ -1,5 +1,5 @@
 """
-Email Module - Contains functions for use with sending and retrieving emails
+Email Module - For functions for use with sending and retrieving emails
 """
 
 import smtplib
