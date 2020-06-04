@@ -1,0 +1,27 @@
+1. RK
+2020-06-03 21:22:43 AUS Eastern Standard Time
+Email sent successfully to recipient customeremail@gmail.com with attachments ('Attachment1.pdf', 'Attachment2.pdf').
+
+2. TY
+2020-06-03 21:22:52 AUS Eastern Standard Time
+Email sent successfully to recipient customeremail@gmail.com with attachments ('Attachment1.pdf', 'Attachment2.pdf').
+
+3. TA
+No files created and no emails sent.
+
+2 rate(s) issues were found:
+	1. 2019HJLDSAF
+	2. 2019FDAFHFS
+
+Customer address issue(s) found.
+	Name: None
+	Address: None
+	Email: None
+
+4. RH
+The following error occurred:
+'latin-1' codec can't encode character '\u2013' in position 70: ordinal not in range(256).
+
+====================================================================================================
+
+ELAPSED TIME (Hours, Mins, Secs): 00:00:18.
