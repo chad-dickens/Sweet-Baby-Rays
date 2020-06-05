@@ -17,7 +17,7 @@ Email_Address VARCHAR(50),
 PRIMARY KEY(ID));
 ```
 
-However, the actual process of getting the data out of Access and into MySQL was giving me some grief, so I just exported the data into CSV files and used brute force with python to get it in, as per populating_sales_data.py.
+However, the actual process of getting the data out of Access and into MySQL was giving me some grief, so I just exported the data into CSV files and used python to get it in, as per populating_sales_data.py.
 
 ```python
 import mysql.connector
