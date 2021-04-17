@@ -115,4 +115,4 @@ Furthermore, if errors have occurred, an email will be sent to the process manag
 An example of my email to customers is below:
 ![alt text](CustomerEmail.png)
 
-You'll notice that in both the email to customers and the error log email to the process manager, I utilisied my number_name() function from the assorted_functions.py file. While perhaps a little unnecessary, I thought this was a good practical use of that function.
+You'll notice that in both the email to customers and the error log email to the process manager, I utilisied my number_name() function from the [Assorted Functions](https://github.com/chad-dickens/Sweet-Baby-Rays/blob/master/Assorted%20Functions/assorted_functions.py) file. While perhaps a little unnecessary, I thought this was a good practical use of that function.
