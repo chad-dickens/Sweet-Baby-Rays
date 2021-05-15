@@ -11,3 +11,5 @@ The second is the game page:
 The third is a leaderboard that displays the top 10 highest scores for your sqlite database:
 
 ![alt text](LeaderBoard.png)
+
+*Beware that this game has been written and optimised for a Mac computer. The GUI on Windows will look different.*
