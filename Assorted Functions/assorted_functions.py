@@ -320,3 +320,26 @@ def caesar_cipher_decoder(my_string):
     key = common.index(min(common))
 
     return 'Key: {}. {}.'.format(key, caesar_cipher(my_string, -key))
+
+
+def largest_product(i):
+    """
+    Will return the largest product that can be made by dividing 
+    i into any combination of integers and multiplying these 
+    integers together.
+    """
+    if i < 1: return False
+    
+    if 3 >= i  >= 1:
+        return i - 1
+    
+    num_threes = int(i / 3)
+    remain = i % 3
+    
+    if remain == 1 and i >= 4:
+        remain = 4
+        num_threes -= 1
+    elif remain == 0:
+        remain = 1
+    
+    return 3 ** num_threes * remain
