@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS rates_data;
 DROP TABLE IF EXISTS sales_data;
 
 CREATE TABLE address_data (
-	Country_Code CHAR(2) PRIMARY KEY,
+    Country_Code CHAR(2) PRIMARY KEY,
     Physical_Address VARCHAR(200),
     Country_Name VARCHAR(50),
     Email_Address VARCHAR(50)
